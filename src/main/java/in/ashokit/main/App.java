@@ -11,7 +11,7 @@ public class App {
 		
 		//starting IOC container
 		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-		int i = 1;
+		
 		Car car = context.getBean(Car.class);	
 		car.drive();
 	}
